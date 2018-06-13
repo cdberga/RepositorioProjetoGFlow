@@ -41,3 +41,11 @@ cd RepositorioProjetoGFlow/
 
 mkdir RepositorioProjetoGFlow
 
+
+Links Uteis
+-----------
+
+- [https://danielkummer.github.io/git-flow-cheatsheet/]
+- [https://nvie.com/posts/a-successful-git-branching-model/]
+- [https://fjorgemota.com/versionamento-semantico-ou-como-versionar-software/]
+- [https://github.com/nvie/gitflow]

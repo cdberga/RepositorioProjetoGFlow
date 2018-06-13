@@ -48,4 +48,6 @@ Links Uteis
 - [https://danielkummer.github.io/git-flow-cheatsheet/]
 - [https://nvie.com/posts/a-successful-git-branching-model/]
 - [https://fjorgemota.com/versionamento-semantico-ou-como-versionar-software/]
+- [https://fjorgemota.com/git-sistema-de-controle-de-versoes-distribuido/]
 - [https://github.com/nvie/gitflow]
+

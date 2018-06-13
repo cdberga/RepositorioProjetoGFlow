@@ -1,0 +1,100 @@
+# Para usar o SSH automaticamente e os comandos remotos no gitHub, tem que alterar o remote de "https://" para "git@", conforme abaixo:
+
+git remote set-url origin git@github.com:andgomes/my-repo.git
+
+# Para alterar o editor padrao do git instalado
+
+git config --global core.editor xed
+
+# Para voltar para um commit antigo:
+
+git checkout <ID-COMMIT>
+
+# Para voltar para o commit do estado do master
+
+git checkout master
+
+# Para descartar modificações feitas recentemente
+
+git checkout -- <NOME DO ARQUIVO ou "."> # Fazer isso antes do "git add"
+
+# Para desfazer de um arquivo que já esteja no Stage
+
+git checkout HEAD -- <NOME DO ARQUIVO>
+
+# Para reverter commits
+
+git revert <ID-COMMIT>
+
+# Para voltar o repositorio para um determinado commit:
+
+git reset <ID-COMMIT>
+
+# Para voltar e remover todas as alterações:
+
+git reset --hard <ID-COMMIT> # cuidado! Não é recomendável fazer isso se você já deu push. Pois alguém já pode ter baixado esse código
+
+# Para ver as diferenças entre um commit e outro:
+
+git diff <COMMIT_ANT> <COMMIT_FINAL (OU NENHUM, VAI ATÉ O FINAL)>
+
+# Para incluir uma nova branch no GitHub
+
+git push -u origin <NOVA BRANCH>
+
+# Para ajustar as branches e sincroniza-las (recomendado quando divergir muito)
+
+git merge <OUTRA BRANCH>
+
+# Quando criamos muitos novos arquivos é melhor usar:
+
+branch_atual> "git rebase <master>"
+    # o que o git faz aqui: 
+        1. Volta para a última base de branch_atual (quando surgiu após ser criada ou mergeada?)
+        2. Adiciona os commits de <master>
+        3. Adiciona (depois) os commits da própria branch
+    # Se houver conflito entre arquivos
+        1. Devemos ajustar o conflito
+        2. Executamos "git add <arquivos>"
+        3. Executamos "git rebase --continue" ao invés de "git commit"
+
+# Quando queremos apenas atualizar o estado do servidor, sem baixar os codigos:
+
+git fetch
+
+# Para subir uma tag
+
+git push origin v1.0 # Onde "v1.0" é o nome da tag
+
+# Git ignore
+
+Adicionar ".gitignore" no repositório
+
+# Para alterar o último commit (antes de fazer o push, de preferencia)
+
+git commit --amend
+
+# Quando temos WIP em branches separadas e não adicionamos na stage, ao mudar de branch dá conflito, resolvemos com:
+
+git stash # Ele salva trabalho em andamento que não esteja adicionado ainda
+
+# Para adicionar um commit de outra branch na branch atual
+
+git cherry-pick novaBranch~1 # Muito útil para replicar uma mudança em outras versões e branches
+
+# Mostrar todas as alterações feitas em um arquivo
+
+git blame <NOME ARQUIVO>
+
+# Fazer busca binária nos commits para encontrar um erro
+
+git bisect bad
+git bisect good
+
+# Para apagar uma branch remotamente:
+
+git push origin :minhaBranch
+
+### Ver "git reset" e "git clean"
+
+

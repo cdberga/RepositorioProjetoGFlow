@@ -1,3 +1,7 @@
+# Para copiar seu projeto e identificá-lo como do github
+
+git remote add origin <URL>
+
 # Para usar o SSH automaticamente e os comandos remotos no gitHub, tem que alterar o remote de "https://" para "git@", conforme abaixo:
 
 git remote set-url origin git@github.com:andgomes/my-repo.git

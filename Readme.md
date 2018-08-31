@@ -50,4 +50,5 @@ Links Uteis
 - [https://fjorgemota.com/versionamento-semantico-ou-como-versionar-software/]
 - [https://fjorgemota.com/git-sistema-de-controle-de-versoes-distribuido/]
 - [https://github.com/nvie/gitflow]
+- [https://medium.com/@luizcarvalho/modelo-de-ger%C3%AAncia-de-branchs-de-sucesso-para-git-54955f876c7]
 
